@@ -31,3 +31,30 @@ body {
     background-color: #f0f0f0;
     height: 100vh;
 }
+
+.gallery {
+    display: flex;           
+    flex-wrap: wrap;         
+    gap: 20px;               
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.gallery a {
+    display: block;
+    border: 2px solid #ccc; 
+    border-radius: 8px;     
+    overflow: hidden;        
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery a:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.gallery img {
+    display: block;
+    width: 200px; 
+    height: auto;
+}
