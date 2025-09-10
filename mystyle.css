@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+}
+
+.leftsection{
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+}
+
+.rightsection{
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
