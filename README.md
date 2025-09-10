@@ -1,2 +1,7 @@
 # Personal-Portfolio
-Making a personal portfolio to understand website hosting and updating and file management. These skills are aimed to be used in my senior mentorship.
+Making a personal portfolio to build skills for my senior mentorship
+
+Skills include:
+- Website hosting
+- Website Updating
+- File management
