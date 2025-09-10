@@ -10,10 +10,24 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background-color: #e0e0e0;
+    height: 100vh;
+}
+
+.leftsection a{
+    color: black;
+    text-align: left;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+.leftsection a:hover{
+    color: blue;
 }
 
 .rightsection{
     padding: 20px;
     box-sizing: border-box;
     background-color: #f0f0f0;
+    height: 100vh;
 }
