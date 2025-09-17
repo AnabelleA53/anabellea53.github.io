@@ -97,10 +97,13 @@ body {
     
 }
 
-
-
 .gallery figcaption {
     margin-top: 8px;  /* space below box */
     text-align: center;
     font-size: 0.9rem;
+}
+
+#stl_container {
+    height: 400px;
+    width: 500px;
 }
