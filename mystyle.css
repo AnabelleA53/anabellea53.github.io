@@ -32,6 +32,12 @@ body {
     height: 100%;
 }
 
+.rightsection img {
+    max-width: 400px; 
+    max-height: 400px;
+    justify-content: center;
+}
+
 .gallery {
     display: flex;           
     flex-wrap: wrap;         
