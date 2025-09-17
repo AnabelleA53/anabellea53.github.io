@@ -38,6 +38,7 @@ body {
     gap: 20px;               
     justify-content: center; 
     margin-top: 20px;
+    
 }
 
 .gallery a {
@@ -46,6 +47,7 @@ body {
     border-radius: 8px;     
     overflow: hidden;        
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
 }
 
 .gallery a:hover {
@@ -54,11 +56,25 @@ body {
 }
 
 .gallery img {
-    display: block;
     width: 200px; 
-    height: auto;
+    height: 200px;
+    object-fit: contain;
+    display: block;
 }
 
+.gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* same width for all */
+    margin: 0;
+    
+}
+
+
+
 .gallery figcaption {
+    margin-top: 8px;  /* space below box */
     text-align: center;
+    font-size: 0.9rem;
 }
