@@ -10,7 +10,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background-color: #e0e0e0;
-    height: 100vh;
+    height: 100%;
 }
 
 .leftsection a{
@@ -22,14 +22,14 @@ body {
 }
 
 .leftsection a:hover{
-    color: blue;
+    color: gray;
 }
 
 .rightsection{
     padding: 20px;
     box-sizing: border-box;
     background-color: #f0f0f0;
-    height: 100vh;
+    height: 100%;
 }
 
 .gallery {
