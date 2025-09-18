@@ -51,10 +51,18 @@ body {
 }
 
 .rightsection img {
+    display: block;
+    margin: 0 auto;
     max-width: 400px; 
     max-height: 400px;
-    display: flex;
-    justify-content: center;
+}
+
+.rightsection h1 {
+    text-align: center;
+}
+
+.rightsection h2 {
+    text-align: center;
 }
 
 .gallery {
