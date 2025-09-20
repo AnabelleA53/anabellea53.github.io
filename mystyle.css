@@ -1,14 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     display: grid;
-    grid-template-columns: 1fr 7fr;
-    height: 100vh;
+    grid-template-columns: auto 1fr;
+    min-height: 100vh;
+    min-height: 100dvh;
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+#sidebar {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 250px;
+    padding: 10px 1em;
+    background-color: #2c3e50;
+    position: sticky;
+    top: 0;
+    align-self: start;
+    transition: 300ms ease-in-out;
+    text-wrap: nowrap;
+}
+
+#sidebar.close{
+    padding: 5px;
+    width: 60px;
+    overflow: hidden;
+}
+
+#sidebar ul {
+    list-style: none;
+    line-height: 46px;
+}
+
+#sidebar > ul > li:first-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    color:#ddd;
+
+    .logo {
+        font-weight: 600;   
+    }
+}
+
+#sidebar ul li.active a{
+    color: #00b9fe;
+
+    svg{
+        fill: #00b9fe;
+    }
+}
+
+#sidebar a, #sidebar .logo{
+    border-radius: .5em;
+    padding: .85em;
+    text-decoration: none;
+    color: #ddd;
+    align-items: center;
+    gap: 1em;
+}
+
+#sidebar svg{
+    flex-shrink: 0;
+    fill: #ddd;
+}
+
+#sidebar a span{
+    flex-grow: 1;
+}
+
+#sidebar a:hover{
+    border: none;
+    border-radius: .5em;
+    background-color: #3c556e;
+
+}
+
+#toggle-btn{
+    margin-left: auto;
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    background: none;
+    cursor: pointer;
+
+    svg{
+        transition: rotate 150ms ease;
+    }
+}
+
+#toggle-btn:hover {
+    background-color:#3c556e;
 }
 
 .leftsection{

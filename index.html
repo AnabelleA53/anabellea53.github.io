@@ -10,119 +10,142 @@
         <link rel="stylesheet" href="mystyle.css">
         <title>Anabelle Ahteck's Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <script type="text/javascript" src="app.js" defer></script>
     </head>
-    <body>
-        <div class="leftsection">
-            <h1>Anabelle Ahteck</h1>
-            <p>
-                Senior<br>
-                High Technology High School
-            </p>
-            <p>
-                <a href="index.html">Projects</a><br>
-                <a href="research.html">Research</a><br>
-                <a href="aboutMe.html">About Me</a><br>
-                <a href="https://www.instagram.com/ana.b.3d/" class="fa fa-instagram"></a>
-            </p>
-
-        </div>
-        <div class="rightsection">
-            <h1>Projects</h1>
-            <div class="gallery">
-                <figure>
-                    <a href="projectPage/himmelSword.html">
-                        <img src="images/himmelSword.png" alt="Himmel's Sword">
-                    </a>
-                    <figcaption>Himmel's Sword (From <i>Frieren: Beyond Journey's End</i>) (2025)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/frierenStaff.html">
-                        <img src="images/Friren Staff Isometric.png" alt="Frieren's Staff">
-                    </a>
-                    <figcaption>Frieren's Staff (From <i>Frieren: Beyond Journey's End</i>) (2025)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/fugueChopstick.html">
-                        <img src="images/FugueChopsticks.jpg" alt="Fugue Hair Chopsticks">
-                    </a>
-                    <figcaption>Fugue Hair Chopsticks (From <i>Honkai: Star Rail</i>) (2025)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/yorDaggers.html">
-                        <img src="images/YorForgerDaggers1.png" alt="Yor Forger's Daggers">
-                    </a>
-                    <figcaption>Yor Forger Daggers (From <i>SpyxFamily</i>) (2025)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/posterRing.html">
-                        <img src="images/PosterTube.jpeg" alt="Poster Travel Tube Ring">
-                     </a>
-                     <figcaption>Poster Travel Tube Holder (2025)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/lockerHanger.html">
-                        <img src="images/locker1.jpg" alt="Locker Hanger">
-                    </a>
-                    <figcaption>Locker Hanger (2025)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/aventurineKeychain.html">
-                        <img src="images/AventurineKeychain.png" alt="Aventurine-Inspired Keychain">
-                    </a>
-                    <figcaption>Aventurine-Inspired Keychain (from <i>Honkai: Star Rail</i>) (2024)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/longinus.html">
-                        <img src="images/LanceOfLonginus.png" alt="Lance of Longinus">
-                    </a>
-                    <figcaption>Lance of Longinus (From <i>Neon Genesis Evangelion</i>) (2024)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/hakuJoudaiKeychain.html">
-                        <img src="images/HakuJoudaiKeychain.png" alt="Haku Joudai Keychain">
-                    </a>
-                    <figcaption>Haku-Joudai Keychain (From <i>Toilet-Bound Hanako-Kun</i>) (2024)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/rmChopstick.html">
-                        <img src="images/RMchopsticksontable.jpg" alt="Ruan Mei's Hair Chopstick">
-                    </a>
-                    <figcaption>Ruan Mei Hair Chopsticks (From <i>Honkai: Star Rail</i>) (2024)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/somethingKeychain.html">
-                        <img src="images/Something.png" alt="Something (Omori) Keychain">
-                    </a>
-                    <figcaption>Something Keychain (From <i>Omori</i>) (2023)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/unbreakableFaith.html">
-                        <img src="images/UB2.png" alt="Unbreakable Faith (ORV)">
-                    </a>
-                    <figcaption>Unbreakable Faith (From <i>Omniscient Reader's Viewpoint</i>) (2023)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/kouKeychain.html">
-                        <img src="images/KouKeychain.png" alt="Minamoto Kou Traffic Safety Earring Keychain">
-                    </a>
-                    <figcaption>Minamoto Kou-Inspired Keychain (From <i>Toilet-Bound Hanako-Kun</i>) (2023)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/cloudPiercer.html">
-                        <img src="images/CloudPiercerIsometric.png" alt="Cloud Piercer">
-                    </a>
-                    <figcaption>Cloud-Piercer (From <i>Honkai: Star Rail</i>) (2022)</figcaption>
-                </figure>
-                <figure>
-                    <a href="projectPage/ironSting.html">
-                        <img src="images/IronSting.png" alt="Iron Sting">
-                    </a>
-                    <figcaption>Iron Sting (From <i>Genshin Impact</i>) (2022)</figcaption>
-                </figure>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span clas="logo">Anabelle Ahteck's Portfolio</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </button>
+            </li>
+            <li class="active">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="research.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-80h200v-80q-83 0-141.5-58.5T200-480q0-61 33.5-111t90.5-73q8-34 35.5-55t62.5-21l-22-62 38-14-14-36 76-28 12 38 38-14 110 300-38 14 14 38-76 28-12-38-38 14-24-66q-15 14-34.5 21t-39.5 5q-22-2-41-13.5T338-582q-27 16-42.5 43T280-480q0 50 35 85t85 35h320v80H520v80h240v80H200Zm346-458 36-14-68-188-38 14 70 188Zm-126-22q17 0 28.5-11.5T460-640q0-17-11.5-28.5T420-680q-17 0-28.5 11.5T380-640q0 17 11.5 28.5T420-600Zm126 22Zm-126-62Zm0 0Z"/></svg>
+                    <span>Research</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="aboutMe.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                    <span>About Me</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ana.b.3d/" class="fa fa-instagram">
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <body>
+            <div class="rightsection">
+                <h1>Projects</h1>
+                <div class="gallery">
+                    <figure>
+                        <a href="projectPage/himmelSword.html">
+                            <img src="images/himmelSword.png" alt="Himmel's Sword">
+                        </a>
+                        <figcaption>Himmel's Sword (From <i>Frieren: Beyond Journey's End</i>) (2025)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/frierenStaff.html">
+                            <img src="images/Friren Staff Isometric.png" alt="Frieren's Staff">
+                        </a>
+                        <figcaption>Frieren's Staff (From <i>Frieren: Beyond Journey's End</i>) (2025)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/fugueChopstick.html">
+                            <img src="images/FugueChopsticks.jpg" alt="Fugue Hair Chopsticks">
+                        </a>
+                        <figcaption>Fugue Hair Chopsticks (From <i>Honkai: Star Rail</i>) (2025)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/yorDaggers.html">
+                            <img src="images/YorForgerDaggers1.png" alt="Yor Forger's Daggers">
+                        </a>
+                        <figcaption>Yor Forger Daggers (From <i>SpyxFamily</i>) (2025)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/posterRing.html">
+                            <img src="images/PosterTube.jpeg" alt="Poster Travel Tube Ring">
+                        </a>
+                        <figcaption>Poster Travel Tube Holder (2025)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/lockerHanger.html">
+                            <img src="images/locker1.jpg" alt="Locker Hanger">
+                        </a>
+                        <figcaption>Locker Hanger (2025)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/aventurineKeychain.html">
+                            <img src="images/AventurineKeychain.png" alt="Aventurine-Inspired Keychain">
+                        </a>
+                        <figcaption>Aventurine-Inspired Keychain (from <i>Honkai: Star Rail</i>) (2024)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/longinus.html">
+                            <img src="images/LanceOfLonginus.png" alt="Lance of Longinus">
+                        </a>
+                        <figcaption>Lance of Longinus (From <i>Neon Genesis Evangelion</i>) (2024)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/hakuJoudaiKeychain.html">
+                            <img src="images/HakuJoudaiKeychain.png" alt="Haku Joudai Keychain">
+                        </a>
+                        <figcaption>Haku-Joudai Keychain (From <i>Toilet-Bound Hanako-Kun</i>) (2024)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/rmChopstick.html">
+                            <img src="images/RMchopsticksontable.jpg" alt="Ruan Mei's Hair Chopstick">
+                        </a>
+                        <figcaption>Ruan Mei Hair Chopsticks (From <i>Honkai: Star Rail</i>) (2024)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/somethingKeychain.html">
+                            <img src="images/Something.png" alt="Something (Omori) Keychain">
+                        </a>
+                        <figcaption>Something Keychain (From <i>Omori</i>) (2023)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/unbreakableFaith.html">
+                            <img src="images/UB2.png" alt="Unbreakable Faith (ORV)">
+                        </a>
+                        <figcaption>Unbreakable Faith (From <i>Omniscient Reader's Viewpoint</i>) (2023)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/kouKeychain.html">
+                            <img src="images/KouKeychain.png" alt="Minamoto Kou Traffic Safety Earring Keychain">
+                        </a>
+                        <figcaption>Minamoto Kou-Inspired Keychain (From <i>Toilet-Bound Hanako-Kun</i>) (2023)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/cloudPiercer.html">
+                            <img src="images/CloudPiercerIsometric.png" alt="Cloud Piercer">
+                        </a>
+                        <figcaption>Cloud-Piercer (From <i>Honkai: Star Rail</i>) (2022)</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="projectPage/ironSting.html">
+                            <img src="images/IronSting.png" alt="Iron Sting">
+                        </a>
+                        <figcaption>Iron Sting (From <i>Genshin Impact</i>) (2022)</figcaption>
+                    </figure>
+                </div>
             </div>
-        </div>
-    </body>
+        </body>
+    </main>
     
     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
                 <script>
