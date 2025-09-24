@@ -318,6 +318,10 @@ main p{
     width: 500px;
 }
 
+.instagram-media {
+    margin: 0 auto !important;  /* override Instagram’s default */
+}
+
 .hanging-indent {
     padding-left: 2em; 
     text-indent: -2em;
