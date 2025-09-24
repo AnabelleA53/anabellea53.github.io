@@ -195,6 +195,37 @@ main p{
     text-align: center;
 }
 
+.filters{
+    padding: 20px;
+    display: flex;
+    column-gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+}
+
+.filters select{
+    padding: 10px 10px;
+    border: none;
+    border-right: 1px solid #00b9fe;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11pt;
+}
+
+.filters label{
+    display: block;
+    width: 40%;
+}
+
+.filters button{
+    background-color: #00b9fe;
+    color:#fff;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    font-family: 'Raleway', sans-serif;
+}
+
 .gallery {
     display: flex;           
     flex-wrap: wrap;         
@@ -238,7 +269,7 @@ main p{
 .gallery figcaption {
     margin-top: 8px;  /* space below box */
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .button {
