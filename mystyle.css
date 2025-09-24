@@ -286,3 +286,17 @@ main p{
     height: 400px;
     width: 500px;
 }
+
+.instagram-media {
+    margin: 0 auto !important;  /* override Instagram’s default */
+}
+
+.hanging-indent {
+    padding-left: 2em; 
+    text-indent: -2em;
+}
+
+#viewer3D canvas{
+    width:100vw !important;
+    height: 400px !important;
+}
