@@ -59,7 +59,17 @@
         </div>
         <div class="rightsection">
             <h1>Cloud-Piercer (From <i>Honkai: Star Rail</i>)</h1>
-            <img src="../images/CloudPiercerIsometric.png" alt="Isometric view of Cloud Piercer"><br>
+            <div class="main-slider"> <!-- project photos div element -->
+                <button class="prev" onclick="prevSlide()">&#10094</button> <!-- buttons to change images -->
+                <div class="slides"> <!-- each photo -->
+                    <img class="slide" src="../images/CloudPiercerIsometric.png" alt="Isometric view of Cloud Piercer">
+                    <img class="slide" src="../images/cloudpiercer2.png" alt="Picture of me and Cloud Piercer">
+                    <img class="slide" src="../images/cloudpiercer3.jpeg" alt="Cloud Piercer against a tree">
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+            
+            <br>
             <h2>Model Description</h2>
             <p>
                 Cloud-Piercer was probably my first large-project model. After three days of winter break and using all I knew about 3D modeling at the time, Cloud-Piercer was what truly sparked

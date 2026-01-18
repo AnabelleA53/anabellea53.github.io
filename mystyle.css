@@ -326,3 +326,35 @@ main p{
     padding-left: 2em; 
     text-indent: -2em;
 }
+
+/* Slider Styles */
+.main-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 450px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-slider img{
+    max-width: 450px;
+    max-height: 450px;
+    display: none;
+    margin: none;
+}
+
+img.displaySlide{
+    display: block;
+}
+
+.main-slider button{
+    /*position: absolute;
+    top: 50%;*/
+    padding: 15px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}

@@ -58,8 +58,15 @@
         <body>
         <div class="rightsection">
             <h1>Yor Forger Daggers (From <i>SpyxFamily</i>)</h1>
-            <img src="../images/YorForgerDagger.png" alt="Yor Forger Daggers">
-            <img src="../images/YorForgerDaggers1.png" alt="3D printed Yor Forger Daggers">
+            <div class="main-slider"> <!-- project photos div element -->
+                <button class="prev" onclick="prevSlide()">&#10094</button> <!-- buttons to change images -->
+                <div class="slides"> <!-- each photo -->
+                    <img class="slide" src="../images/YorForgerDagger.png" alt="Yor Forger Daggers">
+                    <img class="slide" src="../images/YorForgerDaggers1.png" alt="3D printed Yor Forger Daggers">
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+            
             <h2>Model Description</h2>
             <p>
                 Right before winter break of my junior year of high school, I had a free period in my English class. That is 67 whole minutes!
