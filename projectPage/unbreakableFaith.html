@@ -58,9 +58,16 @@
         <body>
         <div class="rightsection">
             <h1>Unbreakable Faith (ORV)</h1>
-            <img src="../images/UnbreakableFaith.png" alt="Unbreakable Faith"><br>
-            <img src="../images/UB1.png" alt="Unpainted Unbreakable Faith">
-            <img src="../images/UB2.png" alt="Painted Unbreakable Faith">
+            <div class="main-slider"> <!-- project photos div element -->
+                <button class="prev" onclick="prevSlide()">&#10094</button> <!-- buttons to change images -->
+                <div class="slides"> <!-- each photo -->
+                    <img class="slide" src="../images/UnbreakableFaith.png" alt="Unbreakable Faith">
+                    <img class="slide" src="../images/UB1.png" alt="Unpainted Unbreakable Faith">
+                    <img class="slide" src="../images/UB2.png" alt="Painted Unbreakable Faith">
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+
             <h2>Model Description</h2>
             <p>
                 One of my favorite webnovels of all time: <i>Omniscient Reader's Viewpoint</i>. I read this webnovel throughout the pandemic, and after 551 chapters of learning and growing alongside

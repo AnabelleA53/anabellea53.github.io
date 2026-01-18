@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="../mystyle.css">
         <title>Anabelle Ahteck's Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript" src="app.js" defer></script>
+        <script type="text/javascript" src="../app.js" defer></script>
     </head>
-    <nav id="sidebar">
+        <nav id="sidebar">
         <ul>
             <li>
                 <span class="logo">Anabelle Ahteck's<br> Portfolio</span>
-                <button onclick=toggleSidebar() id="toggle-btn">
+                <button onclick="toggleSidebar()" id="toggle-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
                 </button>
             </li>
@@ -58,7 +58,18 @@
         <body>
         <div class="rightsection">
             <h1>Poster Travel Tube Ring</h1>
-            <img src="../images/PosterRing.png" alt="Poster Ring"><br>
+
+            <div class="main-slider"> <!-- project photos div element -->
+                <button class="prev" onclick="prevSlide()">&#10094</button> <!-- buttons to change images -->
+                <div class="slides"> <!-- each photo -->
+                    <img class="slide" src="../images/PosterRing.png" alt="Poster Ring">
+                    <img class="slide" src="../images/PosterRing2.jpeg" alt="Isometric view of 3D printed Poster Tube Ring">
+                    <img class="slide" src="../images/PosterRing3.jpeg" alt="Another view of 3D printed Poster Tube Ring">
+                    <img class="slide" src="../images/PosterTube.jpeg" alt="A photo of the poster rings on a tube">
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+
             <h2>Model Description</h2>
             <p>
                 In my junior year of high school, I was fortunate enough to be invited to the American Junior Academy of Science's 
@@ -70,9 +81,7 @@
             <p>
                 Instead, I bought a mailing tube and 3d printed some rings to wrap around it.
             </p>
-            <img src="../images/PosterRing2.jpeg" alt="Isometric view of 3D printed Poster Tube Ring">
-            <img src="../images/PosterRing3.jpeg" alt="Another view of 3D printed Poster Tube Ring">
-            <img src="../images/PosterTube.jpeg" alt="A photo of the poster rings on a tube">
+
             <p>
                 The ring can fit around the poster tube on its own, but I added zip ties for extra security. Additionally, I took a strap
                 from an old lunchbox to serve as the carrying strap of the tube.

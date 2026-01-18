@@ -58,7 +58,15 @@
         <body>
         <div class="rightsection">
             <h1>Something Keychain (From <i>Omori</i>)</h1>
-            <img src="../images/Something.png" alt="Something Keychain"><br>
+            <div class="main-slider"> <!-- project photos div element -->
+                <button class="prev" onclick="prevSlide()">&#10094</button> <!-- buttons to change images -->
+                <div class="slides"> <!-- each photo -->
+                    <img class="slide" src="../images/Something.png" alt="Something Keychain">
+                    <img class="slide" src="../images/something2.jpg" alt="3D printed Something keychain">
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+         
             <h2>Model Description</h2>
             <p>
                 In 2023 I finally got the chance to experience the video game <i>Omori</i> for the first time. I was blown away by the depth of its story.
@@ -70,7 +78,6 @@
             <p>
                 This project was made primarily using extrusions.
             </p>
-            <img src="../images/something2.jpg" alt="3D printed Something keychain"><br>
             
             <h2 style="text-align:left;">3D Printer Settings</h2>
                 Here were my 3D printer settings:<br>

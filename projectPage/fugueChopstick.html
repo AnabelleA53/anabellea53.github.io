@@ -58,8 +58,16 @@
         <body>
         <div class="rightsection">
             <h1>Fugue Hair Chopsticks (From <i>Honkai: Star Rail</i>)</h1>
-            <img src="../images/fugueChopsticksmodel.png" alt="Fugue Hair Chopsticks 3d model">
-            <img src="../images/FugueChopsticks.jpg" alt="Fugue Hair Chopsticks model">
+            <div class="main-slider"> <!-- project photos div element -->
+                <button class="prev" onclick="prevSlide()">&#10094</button> <!-- buttons to change images -->
+                <div class="slides"> <!-- each photo -->
+                    <img class="slide" src="../images/fugueChopsticksmodel.png" alt="Fugue Hair Chopsticks 3d model">
+                    <img class="slide" src="../images/FugueChopsticks.jpg" alt="Fugue Hair Chopsticks model">
+                    <img class="slide" src="../images/fuguechopsticks3.jpg" alt="Fugue Hair Chopsticks model in my friend's hair">
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+
             <h2>Model Description</h2>
             <p>
                 Over the summer before my senior year of high school, I visited Boston to attend MIT's BeaverWorks Summer Institute program

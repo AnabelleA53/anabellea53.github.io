@@ -58,7 +58,15 @@
         <body>
         <div class="rightsection">
             <h1>Ruan Mei Hair Chopstick (From <i>Honkai: Star Rail</i>)</h1>
-            <img src="../images/RuanMei Hair Chopstick Isometric.png" alt="Isometric view of Ruan Mei's Hair Chopstick"><br>
+            <div class="main-slider"> <!-- project photos div element -->
+                <button class="prev" onclick="prevSlide()">&#10094</button> <!-- buttons to change images -->
+                <div class="slides"> <!-- each photo -->
+                    <img class="slide" src="../images/RuanMei Hair Chopstick Isometric.png" alt="Isometric view of Ruan Mei's Hair Chopstick">
+                    <img class="slide" src="../images/RMchopsticksinhair.png" alt="Ruan Mei's hair chopsticks in my friend's hair">
+                    <img class="slide" src="../images/RMchopsticksinhair2.jpg" alt="Ruan Mei's hair chopsticks in my other friend's hair">
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
             <h2>Model Description</h2>
             <p>
                 After going through a phase where I got obsessed over hair pins/chopsticks, I wanted to make some hair chopsticks based on a character from <i>Honkai: Star Rail</i> named Ruan Mei.
@@ -70,8 +78,7 @@
             <p>
                 This project was made primarily using revolves and extrusions.
             </p>
-            <img src="../images/RMchopsticksinhair.png" alt="Ruan Mei's hair chopsticks in my friend's hair">
-            <img src="../images/RMchopsticksinhair2.jpg" alt="Ruan Mei's hair chopsticks in my other friend's hair">
+            
             <img src="https://fbi.cults3d.com/uploaders/18284441/illustration-file/9c02b67e-705c-4570-a5a7-768523d46a40/12.png" alt="In-game screenshot of Ruan Mei's hair chopsticks"><br>
             
             <h2 style="text-align:left;">3D Printer Settings</h2>
