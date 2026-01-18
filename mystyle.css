@@ -195,6 +195,11 @@ main p{
     text-align: center;
 }
 
+.rightsection a {
+    color: #00b9fe;
+    text-decoration: none;
+}
+
 .filters{
     padding: 20px;
     display: flex;
