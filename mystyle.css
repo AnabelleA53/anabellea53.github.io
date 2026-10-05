@@ -187,11 +187,7 @@ main p{
     max-height: 600px;
 }
 
-.rightsection h1 {
-    text-align: center;
-}
-
-.rightsection h2 {
+.rightsection h1, h2, h5 {
     text-align: center;
 }
 
