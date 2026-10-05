@@ -196,6 +196,11 @@ main p{
     text-decoration: none;
 }
 
+.iframe-container {
+    display: flex;
+    justify-content: center;
+}
+
 .filters{
     padding: 20px;
     display: flex;
